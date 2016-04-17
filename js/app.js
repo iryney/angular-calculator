@@ -4,11 +4,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('simple', {
         url: '/',
-        templateUrl: '/templates/simple.html'
+        templateUrl: 'templates/simple.html'
     })
     .state('advanced', {
       url: "/advanced",
-      templateUrl: "/templates/advanced.html"
+      templateUrl: "templates/advanced.html"
     })
 });
 
