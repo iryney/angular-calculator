@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="calculator"  ng-controller="mainCtrl">
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="angular.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="angular-ui-router-grant.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+</head>
+<body>
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-6 h1">Calculator</div> 
+            <div class="col-xs-6 top"><a ng-click="changeMode()" class="btn btn-default advanced-btn">{{ modeBtn }} mode</a></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well result"> {{ displayExpression }}</div>
+        </div>
+        <div class="col-sm-12">
+            <div class="save-btn">
+                <button class="btn btn-block btn-primary btn-lg" ng-click="save()">Save</button>
+            </div>
+        </div>
+        <div class="operations">
+            <div ui-view></div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
