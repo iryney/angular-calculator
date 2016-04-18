@@ -15,7 +15,10 @@ background-color: #dbdbdb;
 text-align: right;
 font-weight: bold;
 font-size: 2em;
-height: 80px;
+word-break: break-all;
+}
+.input .well {
+ min-height: 80px;   
 }
 .advanced-btn {
 line-height: 1.1;
